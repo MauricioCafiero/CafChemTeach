@@ -181,7 +181,7 @@ def display_list_probs(iterations: list):
       Returns:
         None; prints results
   '''
-  for i,iteration in enumerate(prob_iterations):
+  for i,iteration in enumerate(iterations):
     print(f"========= Tokens and probabilities for step {i} =========")
     for key in iteration[f"Step {i}"].keys():
       print(f"{key}: {iteration[f'Step {i}'][key]}")    
