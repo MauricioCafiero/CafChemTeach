@@ -82,7 +82,7 @@ def decoder_inference(model, tokenizer, device, input_txt: str, n_steps: int,
   return iterations
 
 def decoder_list_probs(model, tokenizer, device, input_txt: str, n_steps: int, 
-                    TEMP = 0.0, number_to_return = 5, use_ramp = False):
+                    TEMP = 0.0, number_to_return = 5):
   '''
     Takes input_txt and performs autoregressive inference. Captures the top
     number_to_retun tokens and their probabilities at each step. Autoregresion based
@@ -104,9 +104,6 @@ def decoder_list_probs(model, tokenizer, device, input_txt: str, n_steps: int,
   input_ids = tokenizer(input_txt, return_tensors="pt")["input_ids"].to(device)
   
   iterations = []
-  c_o = int(n_steps*0.10)
-  
-  which_ramp = -1.0 #increasing ramp
 
   with torch.no_grad():
       for c in range(n_steps):
@@ -122,26 +119,24 @@ def decoder_list_probs(model, tokenizer, device, input_txt: str, n_steps: int,
           next_token_logits = output.logits[0, -1, :]
           next_token_probs = torch.softmax(next_token_logits, dim=-1)
 
-          if use_ramp:
-            T_int = TEMP*(1/(1+np.exp(which_ramp*(c-c_o))))
+          if TEMP == 0.0:
+            T_int = 1.0
+            print("Setting T to 1.0 for listing probabilities!")
           else:
-            T_int = TEMP;
-
-          if T_int < 0.015:
-            token_id = torch.argmax(next_token_probs,axis=-1)
-          else:
-            scaled_probs = next_token_probs**(1/T_int)
-            scaled_probs = scaled_probs / scaled_probs.sum()
-
-            token_topk = np.argpartition(scaled_probs.cpu(), -number_to_return)[-number_to_return:]
-            for topk in token_topk:
-              token_id.append(torch.tensor(topk).cuda())
-              decoded_tokens.append(tokenizer.decode(token_id[-1]))
-              token_prob.append(next_token_probs[token_id[-1]])
+            T_int = TEMP
             
-            token_choice = dict()
-            for token, prob in zip(decoded_tokens, token_prob):
-              token_choice[token] = 100 * prob.cpu().item()
+          scaled_probs = next_token_probs**(1/T_int)
+          scaled_probs = scaled_probs / scaled_probs.sum()
+
+          token_topk = np.argpartition(scaled_probs.cpu(), -number_to_return)[-number_to_return:]
+          for topk in token_topk:
+            token_id.append(torch.tensor(topk).cuda())
+            decoded_tokens.append(tokenizer.decode(token_id[-1]))
+            token_prob.append(next_token_probs[token_id[-1]])
+            
+          token_choice = dict()
+          for token, prob in zip(decoded_tokens, token_prob):
+            token_choice[token] = 100 * prob.cpu().item()
 
           iteration[f"Step {c}"] = token_choice
 
