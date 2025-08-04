@@ -5,7 +5,7 @@ See below for examples of basic concepts in Python.
 - [Basic For Loops](#basic-for-loops) <br>
 - [For Loops for Lists/Iterables](#for-loops-for-lists) <br>
 - [For Loops for Dictionaries](#for-loops-for-dictionaries) <br>
-- [Create and RDKit, Scikit-learn and Torch Environment](#set-up-rdkit-environment) <br>
+- [Create an RDKit, Scikit-learn and Torch Environment](#set-up-rdkit-environment) <br>
 
 ## If statements
 
