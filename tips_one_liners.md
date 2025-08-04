@@ -5,6 +5,7 @@ See below for examples of basic concepts in Python.
 - [Basic For Loops](#basic-for-loops) <br>
 - [For Loops for Lists/Iterables](#for-loops-for-lists) <br>
 - [For Loops for Dictionaries](#for-loops-for-dictionaries) <br>
+- [Create and RDKit, Scikit-learn and Torch Environment](#set-up-rdkit-environment) <br>
 
 ## If statements
 
@@ -149,5 +150,27 @@ cd my_rdkit_folder
 ```
 Now create the new RDkit environment:
 ```
-conda create -c conda-forge -n rdkitenv rdkit
+conda create -c conda-forge -n rdkit-env rdkit
+```
+This will take a while, and you will have to indicate a yes at some point
+```
+Proceed? ([y]/n)?
+```
+Once the process is complete, activate the environment with:
+```
+conda activate rdkit-env
+```
+Once the environment is activated, install SciKit-learn, Torch and Jupyter (do one at a time on the command line):
+```
+pip install scikit-learn
+pip install torch, torchvision
+pip install jupyter
+```
+Now you can start Jupyter Notebook, which will open in your default browser:
+```
+jupyter notebook
+```
+When you are done with your session, you can close Jupyter (be sure to use the "close and halt" options from the menu). You can then deactivate the environment:
+```
+conda deactivate rdkit-env
 ```
