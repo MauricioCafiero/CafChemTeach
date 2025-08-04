@@ -1,7 +1,7 @@
 # Some basics of Python
-- [Basic For loops](#basicforloops)<br>
-- [For loops for lists/iterables](#forloopsforlists)<br>
-- [For loops for dictionaries](#forloopsfordictionaries)<br>
+- [Basic For loops](#basicforloops) <br>
+- [For loops for lists/iterables](#forloopsforlists) <br>
+- [For loops for dictionaries](#forloopsfordictionaries) <br>
 
 ## Basic For Loops 
 
