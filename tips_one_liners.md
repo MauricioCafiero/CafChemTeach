@@ -141,3 +141,13 @@ print("The formulae available in the list are:")
 for mol in mol_dict.values():
   print(f"{mol}")
 ```
+
+## Set-up RDKit environment
+Open the Anaconda powershell and go to your desired folder
+```
+cd my_rdkit_folder
+```
+Now create the new RDkit environment:
+```
+conda create -c conda-forge -n rdkitenv rdkit
+```
