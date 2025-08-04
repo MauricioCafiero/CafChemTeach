@@ -4,6 +4,63 @@ See below for examples of basic concepts in Python.
 - [Basic For Loops](#basic-for-loops) <br>
 - [For Loops for Lists/Iterables](#for-loops-for-lists) <br>
 - [For Loops for Dictionaries](#for-loops-for-dictionaries) <br>
+- [Various types of If statements](#if-statements) <br>
+
+## If statements
+
+### Simple comparisons
+```
+x = 29.5
+
+if x == 30.0:
+  print("x is equal to 30")
+else:
+  print("x is not equal 30")
+```
+or with more options:
+```
+x = 29.5
+
+if x == 30.0:
+  print("x is equal to 30")
+elif x > 30:
+  print("x is greater than 30")
+elif x < 30:
+  print("x is less than 30")
+```
+### Using in and not in
+Check if a value is in a list.
+```
+x_list = [30, 67, 90]
+x = 29.5
+
+if x in x_list:
+  print("x is in the list")
+else:
+  print("x is not in the list")
+```
+Check if a string is in another string. (see [below](#for-loops-for-lists) for loops)
+```
+mol_list = ["chloromethane", "1-fluoroethane", "1,1-difluoroethane"]
+frag = "fluoro"
+
+for mol in  mol_list:
+  if frag in mol:
+    print(f"The fragement {frag} is in the molecule")
+  else:
+    print(f"The fragement {frag} is not in the molecule")
+```
+Check if a string is *not* in another string. (see [below](#for-loops-for-lists) for loops)
+```
+mol_list = ["chloromethane", "1-fluoroethane", "1,1-difluoroethane"]
+frag = "chloro"
+
+for mol in  mol_list:
+  if frag not in mol:
+    print(f"The fragement {frag} is not in the molecule")
+  else:
+    print(f"The fragement {frag} is in the molecule")
+```
 
 ## Basic For Loops 
 
