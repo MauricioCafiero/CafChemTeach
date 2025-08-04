@@ -1,7 +1,7 @@
 # Some basics of Python
 See below for examples of basic concepts in Python.
 
-- [Basic For loops](#basicforloops) <br>
+- [Basic For Loops](#basicforloops) <br>
 - [For loops for lists/iterables](#forloopsforlists) <br>
 - [For loops for dictionaries](#forloopsfordictionaries) <br>
 
