@@ -1,10 +1,10 @@
 # Some basics of Python
 See below for examples of basic concepts in Python.
 
+- [Various types of If statements](#if-statements) <br>
 - [Basic For Loops](#basic-for-loops) <br>
 - [For Loops for Lists/Iterables](#for-loops-for-lists) <br>
 - [For Loops for Dictionaries](#for-loops-for-dictionaries) <br>
-- [Various types of If statements](#if-statements) <br>
 
 ## If statements
 
