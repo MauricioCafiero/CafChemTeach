@@ -12,3 +12,5 @@ For some basic Python concepts, see the [common Python techniques](https://githu
 ## Featurize molecules and train a Multilayer perceptron using PyTorch
 - A sample notebook shows how to featurize lists of SMILES strings using RDKit descriptors and how to then fit that data using a neural netowrk in PyTorch
 
+## Simple chatbot using the OpenAI GPT-OSS-20B open weights model
+- Chat with OpenAI's open model. A second version of the notebook includes the reasoning trace in a separate textbox.
