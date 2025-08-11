@@ -6,6 +6,7 @@ See below for examples of basic concepts in Python.
 - [For Loops for Lists/Iterables](#for-loops-for-lists) <br>
 - [For Loops for Dictionaries](#for-loops-for-dictionaries) <br>
 - [Create an RDKit, Scikit-learn and Torch Environment](#set-up-rdkit-environment) <br>
+- [Read in tabular features from a CSV to a Numpy array](#read-in-tabular-features-from-a-csv) <br>
 
 ## If statements
 
@@ -142,6 +143,17 @@ print("The formulae available in the list are:")
 for mol in mol_dict.values():
   print(f"{mol}")
 ```
+
+## Read in tabular features from a CSV
+Say you have a CSV file called features.csv which contains a column called "Targets" (column 11) and several other features in columns 0 through 10:
+```
+df = pd.read_csv("features.csv")
+
+y = df['Targets'].to_list()
+X = df.iloc[:,0:11].values
+```
+X will be a numpy array with all rows and the specified columns.
+
 
 ## Set-up RDKit environment
 Open the Anaconda powershell and go to your desired folder
