@@ -5,8 +5,8 @@ See below for examples of basic concepts in Python.
 - [Basic For Loops](#basic-for-loops) <br>
 - [For Loops for Lists/Iterables](#for-loops-for-lists) <br>
 - [For Loops for Dictionaries](#for-loops-for-dictionaries) <br>
-- [Create an RDKit, Scikit-learn and Torch Environment](#set-up-rdkit-environment) <br>
 - [Read in tabular features from a CSV to a Numpy array](#read-in-tabular-features-from-a-csv) <br>
+- [Create an RDKit, Scikit-learn and Torch Environment](#set-up-rdkit-environment) <br>
 
 ## If statements
 
