@@ -47,12 +47,10 @@ ollama list
 ## Models to use:
 The format of a given model us usually the name+version number:how many parameters. For example: llama3.2:1b is the llama model (from Meta), version 3.2, the 1 billion parameter version.
 - On a typical Windows or MAC laptop without a fancy GPU, you will likely want to use smaller models. usually 1-2b parameter models will use 1-2 GB of memory to run; a 3-4b model will use 4-5 GB to run, etc.
-- Suggested models:
+- Suggested models. The first three are small models that have good general knowledge, while the last two have have dodgy general knowledge but are very small if you have limited resources. The Phi models are from Microsoft, Gemma models from are Google, and smollm models are from HuggingFace.  
   * **llama3.2:1b**
   * **phi4-mini**
-  * **phi3.5** <br>
-these models have good general knowledge. The Phi models are from Microsoft
+  * **phi3.5** 
   * **gemma3:1b**
-  * **smollm** <br>
-these are smaller models if you have limited resources. They have dodgy general knowledge. Gemma models from are Google, and smollm models are from HuggingFace.
+  * **smollm** 
 - See all available models at the [Ollama library](https://ollama.com/library)
