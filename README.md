@@ -18,3 +18,6 @@ For some basic Python concepts, see the [common Python techniques](https://githu
 
 ## Simple chatbot using the OpenAI GPT-OSS-20B open weights model
 - Chat with OpenAI's open model. A second version of the notebook includes the reasoning trace in a separate textbox.
+
+## Simple retrieval-augmented generation with the Gemma LLM
+- upload a PDF and use Gemma to interact with the content of the document.
