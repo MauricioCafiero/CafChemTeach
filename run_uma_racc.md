@@ -42,10 +42,23 @@ this make take a while! After it is done:
 ```
 Again, this may take a while!
 
-### Set-up your Huggingface token
+## Set-up your Huggingface token
 You can save your huggingface token to your account by running the following:
 ```
 (uma-env)[user-id@racc2]$ hf auth login
 ```
+## Set up scripts
+- Find the gpu.slurm file in this repo and place it in your home directory, in a folder called scripts/
+- Find the submit_gpu.sh file in this repo and place it in your home directory, in a folder called bin/
+(make sure ~/bin is in your path in your .bash_profile)
 
-
+## Run UMA on a GPU on RACC2
+Prepare your python file (test-uma.py) and run it on a GPU:
+```
+(uma-env)[user-id@racc2]$ submit_gpu.sh test-uma.py
+```
+Check if it is running using
+```
+(uma-env)[user-id@racc2]$ squeue
+```
+If this it is your first time running a particular UMA checkpoint, it will download it first. It will not have to doanload it again. 
