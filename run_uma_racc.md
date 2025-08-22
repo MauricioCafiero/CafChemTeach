@@ -1,5 +1,8 @@
 # Running Python packages on RACC2
 
+- [Psi4 for quantum chemistry](#running-psi4-on-racc2) <br>
+- [UMA MLIP for quantum chemistry](#running-fairchem-uma-mlip-on-racc2) <br>
+
 ## Running FairChem UMA MLIP on RACC2
 ### Load anaconda and create an environment
 First ensure you have enough disk space. You can check with the du command and your user-id:
@@ -107,6 +110,12 @@ This may take a few minutes!
 - Find the template.slurm file in this repo and place it in your home directory, in a folder called scripts/
 - Find the submit_psi4.sh file in this repo and place it in your home directory, in a folder called bin/
 (make sure ~/bin is in your path in your .bash_profile)
+- for this script, your python file which you plan to submit to the queue should have the following lines:
+```
+cores = 1
+p4_mem = 1
+```
+The script will then substitute the 1's for the amount of memory and cores you specify.
 
 ### Run UMA on a GPU on RACC2
 Prepare your python file (test_p4.py) and run it:
@@ -115,5 +124,5 @@ Prepare your python file (test_p4.py) and run it:
 ```
 Check if it is running using
 ```
-(uma-env)[user-id@racc2]$ squeue
+(p4env)[user-id@racc2]$ squeue
 ```
