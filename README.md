@@ -28,11 +28,11 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 - For instructions on using Ollama for LLMs, see the [Ollama page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/using_ollama.md) <br>
 - For instructions on using Google's NotebookLM, see the [NotebookLM page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebookLM.md) <br>
 
-## Demonstrate Transformer encoders and decoders
+### Demonstrate Transformer encoders and decoders
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Transformers_demo_CafChem.ipynb) shows how decoders generate text autoregressively. Can be used with any model on Huggingface. Also shows how encoders fill in masked words.
 
-## Simple chatbot using the OpenAI GPT-OSS-20B open weights model
+### Simple chatbot using the OpenAI GPT-OSS-20B open weights model
 - [Chat with OpenAI's open model](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/OpenAI_Chatbot_CafChem.ipynb). A second version of the notebook includes the reasoning trace in a separate textbox.
 
-## Simple retrieval-augmented generation with the Gemma LLM
+### Simple retrieval-augmented generation with the Gemma LLM
 - upload a PDF and [use Gemma to interact with the content of the document](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Simple_Rag_Chat_CafChem.ipynb).
