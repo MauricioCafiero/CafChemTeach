@@ -32,6 +32,9 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 ### Demonstrate Transformer encoders and decoders
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Transformers_demo_CafChem.ipynb) shows how decoders generate text autoregressively. Can be used with any model on Huggingface. Also shows how encoders fill in masked words.
 
+### Simple AI Agent that can use tools
+- A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/SimpleAgent_CafChem.ipynb) shows how to build an AI Agent that can use tools.
+
 ### Simple chatbot using the OpenAI GPT-OSS-20B open weights model
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/OpenAI_Chatbot_CafChem.ipynb). shows how to chat with OpenAI's open model. A second version of the notebook includes the reasoning trace in a separate textbox.
 
