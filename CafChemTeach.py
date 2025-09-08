@@ -57,7 +57,7 @@ class token_demo():
         for idx, t in enumerate(self.token_ids):
             print(
                 f'\x1b[0;30;48;2;{colors_list[idx % len(colors_list)]}m' +
-                t + '\x1b[0m', end=' ')
+                str(t) + '\x1b[0m', end=' ')
 
 def setup_decoder(model_name: str):
   '''
