@@ -5,6 +5,60 @@ import pandas as pd
 import numpy as np
 import random
 
+colors_list = [
+    '102;194;165', '252;141;98', '141;160;203',
+    '231;138;195', '166;216;84', '255;217;47']
+
+class token_demo():
+    '''
+    demonstrate tokenization
+    '''
+    def __init__(self, tokenizer_name: str):
+      '''
+        Load a specified tokenizer.
+        
+            Args:
+                tokenizer_name: tokenizer to use
+            Returns:
+                None
+      '''
+      self.tokenizer_name = tokenizer_name
+      try:
+        self.tokenizer = AutoTokenizer.from_pretrained(tokenizer_name)
+        print(f'{self.tokenizer_name} loaded!')
+      except:
+        print('Invalid model name!')
+      
+    def show_tokens(self, sentence):
+        '''
+            Given a sentence, shows color-coded tokens.
+            
+                Args:
+                    Sentence: sentence to tokenize
+                Returns:
+                    None
+        '''
+        self.sentence = sentence
+        self.token_ids = self.tokenizer(self.sentence).input_ids
+        for idx, t in enumerate(self.token_ids):
+            print(
+                f'\x1b[0;30;48;2;{colors_list[idx % len(colors_list)]}m' +
+                self.tokenizer.decode(t) + '\x1b[0m', end=' ')
+    
+    def show_ids(self):
+        '''
+            Given a sentence, shows color-coded token ids.
+            
+                Args:
+                    None
+                Returns:
+                    None
+        '''
+        for idx, t in enumerate(token_ids):
+            print(
+                f'\x1b[0;30;48;2;{colors_list[idx % len(colors_list)]}m' +
+                t + '\x1b[0m', end=' ')
+
 def setup_decoder(model_name: str):
   '''
     Setup the decoder model. Pulls model and tokenizer from HuggingFace, sets up device.
