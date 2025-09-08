@@ -54,7 +54,7 @@ class token_demo():
                 Returns:
                     None
         '''
-        for idx, t in enumerate(token_ids):
+        for idx, t in enumerate(self.token_ids):
             print(
                 f'\x1b[0;30;48;2;{colors_list[idx % len(colors_list)]}m' +
                 t + '\x1b[0m', end=' ')
