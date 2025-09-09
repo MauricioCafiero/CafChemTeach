@@ -1,6 +1,7 @@
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from transformers import pipeline
+from diffusers import DDPMPipeline
 import pandas as pd
 import numpy as np
 import random
@@ -289,3 +290,25 @@ def maskfilling_results(result):
     print(f"========= Tokens and probabilities for MASK 1 =========")
     for i, prob in enumerate(result):
       print(f'Token: {prob["token_str"]:10}, Prob: {100*prob["score"]:5.2f}')
+
+def use_DDPM_pipeline(repo_name: str, num_images = 4, num_steps = 25):
+  '''
+    use the DDPM pipeline with a provided model from the HF hub.
+
+      Args:
+        repo_name: model name
+        num_images: how many images requested
+        num_steps: number of inference steps
+      Returns:
+        None
+  '''
+  device = "cuda" if torch.cuda.is_available() else "cpu"
+  ddpm = DDPMPipeline.from_pretrained(repo_name).to(device)
+  ims = ddpm(num_inference_steps=num_steps, batch_size=num_images).images
+
+  sampled_list = []
+  for image in ims:
+    sampled_list.append(image)
+
+  for i in range (len(sampled_list)):
+    display(sampled_list[i])
