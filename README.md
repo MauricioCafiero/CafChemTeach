@@ -10,6 +10,7 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 - See the [common Python techniques](https://github.com/MauricioCafiero/CafChemTeach/blob/main/python_basics.md)<br>
 - See the [primer on regular expressions](https://github.com/MauricioCafiero/CafChem/blob/main/regex.md) <br>
 - See the [Python on RACC2 page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/run_python_racc.md) <br>
+- See the [sample notebook for PubChemPy usage](https://github.com/MauricioCafiero/CafChem/blob/main/notebooks/Pubchem_CafChem.ipynb).
 
 ### A Primer on SMILES
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/SMILES_primer_CafChem.ipynb) shows how SMILES strings are used to represent molecules
