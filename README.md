@@ -24,6 +24,9 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 ### Featurize molecules and train a Multilayer perceptron using PyTorch
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/BasicMLP_CafChem.ipynb) shows how to featurize lists of SMILES strings using RDKit descriptors and how to then fit that data using a neural netowrk in PyTorch.
 
+### Try temperature-based sampling on models from Huggingface
+- A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/LLM_Sampling_CafChem.ipynb) shows how to download models and perform sampling
+
 
 ## Intro to LLMs
 
