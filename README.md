@@ -27,6 +27,8 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 ### Try temperature-based sampling on models from Huggingface
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/LLM_Sampling_CafChem.ipynb) shows how to download models and perform sampling
 
+### Make a Gradio app
+- A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Gradio_CafChem.ipynb) demonstrates how to make a simple Gradio app.
 
 ## Intro to LLMs
 
