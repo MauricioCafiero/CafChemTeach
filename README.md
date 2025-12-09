@@ -16,7 +16,10 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/SMILES_primer_CafChem.ipynb) shows how SMILES strings are used to represent molecules
 
 ### Introduction to RDKit
-- A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/RDKit_intro_CafChem.ipynb) shows how to use RDKit to explore molecules and molecular properties, including applications to medicinal chemistry. 
+- A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/RDKit_intro_CafChem.ipynb) shows how to use RDKit to explore molecules and molecular properties, including applications to medicinal chemistry.
+
+### Molecular Dynamics with the Lennard Jones potential
+- A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/LennardJones_CafChem.ipynb) shows how to set up an run a molecular dynamics simulation with a simple Lennard-Jones potential.
 
 ### Featurize molecules and train SciKit-learn models
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Featurizing_SKLearn_CafChem.ipynb) shows how to featurize lists of SMILES strings using RDKit descriptors and how to then fit that data using models from SciKit-learn
