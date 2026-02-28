@@ -13,6 +13,12 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 - See the [sample notebook for PubChemPy usage](https://github.com/MauricioCafiero/CafChem/blob/main/notebooks/Pubchem_CafChem.ipynb).
 - See the [sample notebook for nistchempy usage](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/CH2PR1_NIST_IR.ipynb).
 
+## Intro to LLMs
+
+- See the [Ollama for LLMs page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/using_ollama.md) <br>
+- See the [code to run a Ollama RAG chatbot in the terminal!](https://github.com/MauricioCafiero/CafChemTeach/blob/main/ollama_test.py) <br>
+- See the [NotebookLM by Google page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebookLM.md) <br>
+
 ### A Primer on SMILES
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/SMILES_primer_CafChem.ipynb) shows how SMILES strings are used to represent molecules
 
@@ -33,11 +39,6 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 
 ### Make a Gradio app
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Gradio_CafChem.ipynb) demonstrates how to make a simple Gradio app.
-
-## Intro to LLMs
-
-- See the [Ollama for LLMs page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/using_ollama.md) <br>
-- See the [NotebookLM by Google page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebookLM.md) <br>
 
 ### Demonstrate Transformer encoders and decoders
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Transformers_demo_CafChem.ipynb) shows how decoders generate text autoregressively. Can be used with any model on Huggingface. Also shows how encoders fill in masked words.
