@@ -9,6 +9,12 @@ vector_store_flag = False
 
 def get_model_list():
     '''
+    Returns a list of available ollama models.
+
+      Args:
+        None
+      Returns:
+        matches: a list of available model names
     '''
     models_list = ollama.list()
     models_list = str(models_list)
@@ -41,6 +47,12 @@ def custom_model():
 
 def prep_vector_store(filename):
     '''
+    Loads a PDF file, splits it into chunks, and creates a Chroma vector store.
+
+      Args:
+        filename: path to the PDF file to load
+      Returns:
+        vector_store: a Chroma vector store containing the document chunks
     '''
     global vector_store_flag
     vector_store_flag = True
