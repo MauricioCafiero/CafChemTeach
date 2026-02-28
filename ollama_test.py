@@ -68,6 +68,13 @@ def prep_vector_store(filename):
 
 def chat_with_doc(vector_store,query):
     '''
+    Retrieves relevant document chunks from the vector store for a given query.
+
+      Args:
+        vector_store: a Chroma vector store containing the document chunks
+        query: the user's question or search query
+      Returns:
+        just_content: a list of page content strings from the most relevant chunks
     '''
     retriever = vector_store.as_retriever(searh_type = 'similarity',
                                            search_kwargs = {'k': 4})
