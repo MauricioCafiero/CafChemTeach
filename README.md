@@ -17,6 +17,7 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 
 - See the [Ollama for LLMs page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/using_ollama.md) <br>
 - See the [code to run a Ollama RAG chatbot in the terminal!](https://github.com/MauricioCafiero/CafChemTeach/blob/main/ollama_test.py) <br>
+- See the [code to run large Ollama models in the cloud!](https://github.com/MauricioCafiero/CafChemTeach/blob/main/ollama_cloud.py) <br>
 - See the [NotebookLM by Google page](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebookLM.md) <br>
 
 ### A Primer on SMILES
