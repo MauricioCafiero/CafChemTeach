@@ -29,6 +29,9 @@ A library and notebooks and such for the Module: *Python, Machine Learning and A
 ### Molecular Dynamics with the Lennard Jones potential
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/LennardJones_CafChem.ipynb) shows how to set up an run a molecular dynamics simulation with a simple Lennard-Jones potential.
 
+### PySCF calculations for the CH3CC2 module
+- A [Sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/CH3CC2__PySCF_CafChem.ipynb) goes through the steps to complete the PC practical.
+
 ### Featurize molecules and train SciKit-learn models
 - A [sample notebook](https://github.com/MauricioCafiero/CafChemTeach/blob/main/notebooks/Featurizing_SKLearn_CafChem.ipynb) shows how to featurize lists of SMILES strings using RDKit descriptors and how to then fit that data using models from SciKit-learn
 
